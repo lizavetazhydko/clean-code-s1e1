@@ -8,21 +8,21 @@
     <title>Todo App</title>
   </head>
   <body class="body">
-    <div class="header">
+    <header class="header">
       <img class="header__image" src="./eisenhower-matrix.jpg" alt="The Eisenhower Matrix">
       <a class="header__link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
-    </div>
-    <div class="main">
-      <p id="add-block">
+    </header>
+    <article class="main">
+      <section id="add-block">
         <label for="add-block__item" class="add-block__label">Add Item</label>
         <div class="add-block__new-task-input">
           <input id="add-block__item" class="edit-input new-task-input" type="text">
           <button class="btn add-btn">Add</button>
         </div>
-      </p>
+      </section>
       <h3 class="title">Todo</h3>
-      <ul id="todo-block" class="tasks-block">
-        <li class="task-item">
+      <section id="todo-block" class="tasks-block">
+        <div class="task-item">
           <input class="task-item__input-checkbox" type="checkbox">
           <label class="task-item__label completed">Pay Bills</label>
           <input type="text" class="edit-input task-item__input">
@@ -30,8 +30,8 @@
           <button class="btn btn-delete">
             <img class="delete-icon" src="./remove.svg" alt="Remove icon">
           </button>
-        </li>
-        <li class="task-item editMode">
+        </div>
+        <div class="task-item editMode">
           <input class="task-item__input-checkbox" type="checkbox">
           <label  class="task-item__label edit-mode-task completed">Go Shopping</label>
           <input type="text" value="Go Shopping" class="edit-input task-item__input">
@@ -39,11 +39,11 @@
           <button class="btn btn-delete">
             <img class="delete-icon" src="./remove.svg" alt="Remove icon">
           </button>
-        </li>
-      </ul>
+        </div>
+      </section>
       <h3 class="title">Completed</h3>
-      <ul class="tasks-block completed" id="completed-block">
-        <li class="task-item">
+      <section class="tasks-block completed" id="completed-block">
+        <div class="task-item">
           <input class="task-item__input-checkbox" type="checkbox" checked>
           <label class="task-item__label completed">See the Doctor</label>
           <input type="text" class="edit-input task-item__input">
@@ -51,9 +51,9 @@
           <button class="btn btn-delete">
             <img class="delete-icon" src="./remove.svg" alt="Remove icon">
           </button>
-        </li>
-      </ul>
-    </div>
+        </div>
+      </section>
+    </article>
     <script src="app.js"></script>
   </body>
 </html>
